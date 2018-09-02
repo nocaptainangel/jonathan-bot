@@ -84,14 +84,20 @@ function handleMessage(sender_psid, received_message) {
 
  let response;
 
-  // Check if the message contains text
-  if (received_message.text == 'hello') ; switch(answer.toUpperCase()) {    
-
-    // Create the payload for a basic text message
+ // check if the message contains a text
+ if (received_message.text) {
+  // if the message says 'hello'
+  if (received_message.text.toLowerCase() == 'Hello'.toLowerCase()) {
     response = {
-      "text": `yO WAZUP`
+      'text': 'Helllllooooooo babeeeee ko'
     }
-  }  
+  }
+ } else {
+  // if the text is undefined or empty
+  response = {
+    'text': 'I love you Angel <3'
+  }
+ }
   
   // Sends the response message
   callSendAPI(sender_psid, response);    
