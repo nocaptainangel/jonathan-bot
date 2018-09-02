@@ -85,11 +85,11 @@ function handleMessage(sender_psid, received_message) {
  let response;
 
   // Check if the message contains text
-  if (received_message.text) {    
+  if (received_message.text == 'hello') {    
 
     // Create the payload for a basic text message
     response = {
-      "text": `I love you Angel`
+      "text": `yO WAZUP`
     }
   }  
   
