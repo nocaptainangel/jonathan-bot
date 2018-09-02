@@ -86,16 +86,22 @@ function handleMessage(sender_psid, received_message) {
 
  // check if the message contains a text
  if (received_message.text) {
+
   // if the message says 'hello'
   if (received_message.text.toLowerCase() == 'Hello'.toLowerCase()) {
     response = {
       'text': 'Helllllooooooo babeeeee ko'
-}
-  if (received_message.text.toLowerCase() == 'Akin na lang ROG mo'.toLowerCase()) {
+    }
+  } else if (received_message.text.toLowerCase() == 'Akin na lang ROG mo'.toLowerCase()) {
     response = {
       'text': 'Sige babee, matagal ko na gusto ibigay sayo yun eh nahihiya lang ako HAHAHAHAH.'
     }
+  } else if (received_message.text.toLowerCase() == 'Miss you'.toLowerCase()) {
+    response = {
+      'text': 'Miss you so much babyyy koooooooooooo.'
+    }
   }
+
  } else {
   // if the text is undefined or empty
   response = {
