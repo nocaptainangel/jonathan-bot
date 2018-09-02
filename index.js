@@ -90,6 +90,10 @@ function handleMessage(sender_psid, received_message) {
   if (received_message.text.toLowerCase() == 'Hello'.toLowerCase()) {
     response = {
       'text': 'Helllllooooooo babeeeee ko'
+}
+  if (received_message.text.toLowerCase() == 'Akin na lang ROG mo'.toLowerCase()) {
+    response = {
+      'text': 'Sige babee, matagal ko na gusto ibigay sayo yun eh nahihiya lang ako HAHAHAHAH.'
     }
   }
  } else {
